@@ -3,9 +3,11 @@ const mongoose = require('mongoose');
 const userRoutes = require('./routes/user');
 const saucesRoutes = require('./routes/sauces');
 const path = require('path');
+require('dotenv').config();
 
 // CONNEXION SUR MONGODB ATLAS
-mongoose.connect('mongodb+srv://admin:azerty123@cluster0.u16wz.mongodb.net/?retryWrites=true&w=majority',
+mongoose.connect(
+   process.env.SECRET_MONGODB,
   { useNewUrlParser: true,
     useUnifiedTopology: true })
   .then(() => console.log('Connexion à MongoDB réussie !'))
