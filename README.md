@@ -1,5 +1,5 @@
 # Hot take
-Switch to the Demo-build branch to test the full project and get images with `git checkout Demo-build`
+Switch to the Demo-build branch to test the full project and get images with `git checkout demo-build`
 
 ## Back-en
 
